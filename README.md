@@ -38,6 +38,8 @@ Format this text as follwing
 
 ```
 
+<img width="481" height="330" alt="image" src="https://github.com/user-attachments/assets/da0d6e9d-cf85-4da7-9f1e-f1a6a33cd3d5" />
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
