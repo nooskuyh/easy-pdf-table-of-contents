@@ -32,11 +32,10 @@ Format this text as follwing
 
 [ name_of_chapter(nullable) , title, page_number,
 
-[name_of_chapter, title, page_number, []
+[name_of_chapter, title, page_number, [] ... ]
 
 (Paste the raw table of contents text here)
 
-... ]
 ```
 
 
