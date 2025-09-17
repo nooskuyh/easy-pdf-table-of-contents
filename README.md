@@ -43,11 +43,11 @@ Format this text as follwing
 ## Usage
 
 ```
-python main.py <input_pdf> <bookmarks_file> <out_pdf> + <offset=0>
+python main.py input_pdf bookmarks_file out_pdf (offset)
 ```
 
-* <input_pdf>: Path to the source PDF file as "sample.pdf".
-* <bookmarks_file>: Path to the formatted bookmarks text file as "sample_toc.txt".
-* <output_pdf>: Path for the new PDF file with bookmarks.
+* input_pdf: Path to the source PDF file as "sample.pdf".
+* bookmarks_file: Path to the formatted bookmarks text file as "sample_toc.txt".
+* output_pdf: Path for the new PDF file with bookmarks.
 
-* <offset>: (Optional) A number to add or subtract from all page numbers. For example, if the book's page '1' is the 15th page of the PDF file, you would use --offset 14. Defaults to 0.
+* offset: (Optional) A number to add or subtract from all page numbers. For example, if the book's page '1' is the 15th page of the PDF file, you would use --offset 14. Defaults to 0.
