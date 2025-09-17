@@ -2,6 +2,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
+# README
 Putting a table of contents in a pdf easily.
 
 <!-- GETTING STARTED -->
