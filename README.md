@@ -3,7 +3,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-We can use LLM for parshing a table of contents and put in a pdf easily.
+Putting a table of contents in a pdf easily.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -14,26 +14,29 @@ We can use LLM for parshing a table of contents and put in a pdf easily.
 pip3 install pikepdf
 ```
 
-### Format
+### Table of Contents Format
 ```
 
-"[" name_of_chapter(Nullable) , title, page_number(+/-), sub_chapter(list) "]"
+"[" name_of_chapter , title, page_number, sub_chapter(list) "]"
 
 ```
+* name_of_chapter (string/null): The chapter identifier, like "1" or "A.1". If there is none, use an empty string "".
+* title (string): The title of the chapter or section.
+* page_number (integer): The literal page number as it appears in the table of contents.
+* sub_chapters (list): A nested list for any sub-chapters. This must be an empty list [] if there are no sub-chapters. 
 
-If you want to generate a table of contents file automatically. Copy the raw text of the table of contents from pdf. Use this prompt to LLM with a copy text of table of contents. I'll add a llm api for this task later.
+To generate this file automatically, copy the raw text of the table of contents from your PDF. Then, use the following prompt with an LLM to format the text correctly. I'll add a llm api for this task later.
 
 ```
 Format this text as follwing
 
-[ name_of_chapter(Nullable) , title, page_number,
+[ name_of_chapter(nullable) , title, page_number,
 
 [name_of_chapter, title, page_number, []
 
-(Raw text from the book)
+(Paste the raw table of contents text here)
+
 ... ]
-
-
 ```
 
 
@@ -41,5 +44,11 @@ Format this text as follwing
 ## Usage
 
 ```
-python main.py <in_pdf> <bookmarks_file> <out_pdf> + <offset=0>
+python main.py <input_pdf> <bookmarks_file> <out_pdf> + <offset=0>
 ```
+
+* <input_pdf>: Path to the source PDF file as "sample.pdf".
+* <bookmarks_file>: Path to the formatted bookmarks text file as "sample_toc.txt".
+* <output_pdf>: Path for the new PDF file with bookmarks.
+
+* <offset>: (Optional) A number to add or subtract from all page numbers. For example, if the book's page '1' is the 15th page of the PDF file, you would use --offset 14. Defaults to 0.
