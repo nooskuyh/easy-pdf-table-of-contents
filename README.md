@@ -3,6 +3,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+We can use LLM for parshing a table of contents and put in a pdf easily.
 
 <!-- GETTING STARTED -->
 ## Getting Started
