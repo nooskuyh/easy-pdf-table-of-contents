@@ -2,7 +2,6 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
 Putting a table of contents in a pdf easily.
 
 <!-- GETTING STARTED -->
