@@ -26,7 +26,6 @@ pip3 install pikepdf
 * sub_chapters (list): A nested list for any sub-chapters. This must be an empty list [] if there are no sub-chapters. 
 
 To generate this file automatically, copy the raw text of the table of contents from your PDF. Then, use the following prompt with an LLM to format the text correctly. I'll add a llm api for this task later.
-
 ```
 Format this text as follwing
 
@@ -35,7 +34,6 @@ Format this text as follwing
 [name_of_chapter, title, page_number, [] ... ]
 
 (Paste the raw table of contents text here)
-
 ```
 
 <img width="481" height="330" alt="image" src="https://github.com/user-attachments/assets/da0d6e9d-cf85-4da7-9f1e-f1a6a33cd3d5" />
