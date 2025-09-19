@@ -20,7 +20,7 @@ pip3 install pikepdf
 "[" name_of_chapter , title, page_number, sub_chapter(list) "]"
 
 ```
-* name_of_chapter (string/null): The chapter identifier, like "1" or "A.1". If there is none, use an empty string "".
+* number_of_chapter (string/null): The chapter identifier, like "1" or "A.1". If there is none, use an empty string "".
 * title (string): The title of the chapter or section.
 * page_number (integer): The literal page number as it appears in the table of contents.
 * sub_chapters (list): A nested list for any sub-chapters. This must be an empty list [] if there are no sub-chapters. 
