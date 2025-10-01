@@ -2,7 +2,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-# README
+# EasyTOC
 Putting a table of contents in a pdf easily.
 
 <!-- GETTING STARTED -->
